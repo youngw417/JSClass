@@ -8,10 +8,11 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <form id="form">
-        <input style="position:absolute; top:50%; left:5%; width:40%;" type="text" id="userInput" />
-        <input style="position:absolute; top:60%; left:5%; width:40%;" type="submit" onclick="othername();" />
+    <form id="form" onsubmit="return false">
+        <input style="width:40%;" type="text" id="userInput" />
+        <input style="width:40%;" type="submit" onclick="othername();" />
+        
     </form>
-    
+    <div class="answer"></div>
 </body>
 </html>
