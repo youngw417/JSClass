@@ -6,17 +6,26 @@ function getRandomColor() {
   }
   return color;
 }
+function myEmoji(num) {
+  var item = '';
+  for (var i = 0; i < num; i++) {
+    item += '🍎';
+  }
+  return item;
+}
 
 function othername() {
   var inputEle = document.getElementById('userInput');
   var input = inputEle.value;
   var myint = parseInt(input);
   var mydoc = document.querySelector('.answer');
-  // var mynode = document.createElement('div');
-  for (var i = 0; i < myint; i++) {
+  var mynode = document.createElement('div');
+  for (var i = 0; i <= myint; i++) {
     var myitem = mydoc.appendChild(document.createElement('div'));
     myitem.style.color = getRandomColor();
-    myitem.textContent = i;
+    myitem.style.fontSize = '30px';
+    var showEmoji = myEmoji(i);
+    myitem.textContent = showEmoji;
     inputEle.value = '';
   }
 
