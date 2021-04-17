@@ -10,8 +10,9 @@ while (guess != ranNumber) {
 
 // improvement point:
 // 1. number of guess
-// 2. ask your name on prompt and print "name wins! " 
+// 2. ask your name on prompt and print "name wins! "
 // on the screen 100 times, using document.write after you win
 // This is test again
 // This is test2
 // this is test3
+// this is test4
