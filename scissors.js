@@ -1,7 +1,7 @@
 var rounds = prompt(
   'How many rounds of rock, paper, scissors do you wnat to play?'
 );
-
+// this is test
 var wins = 0;
 var loses = 0;
 var draws = 0;
