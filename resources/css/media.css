@@ -1,0 +1,38 @@
+/* Media query for responsive web */
+
+@media (max-width: 500px) {
+  .row-2 {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  .logo {
+    height: 60px;
+  }
+  .main-nav li a {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+  }
+
+  .main-nav {
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .headerH1 {
+    margin-bottom: 30px;
+  }
+
+  .meal-photo {
+    width: 50%;
+  }
+}

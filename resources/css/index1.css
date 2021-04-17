@@ -1,0 +1,210 @@
+/* remember computer browser screen size 16px
+We want to use relative size base on that size,
+so in the root element either html or body, we use 
+font-size: 62.5% (10px / 16 * 100) 10 px => 1 rem
+
+16 px * 0.625 = 10 px
+rem is refereced to root element font-size
+*/
+
+body {
+  color: blue;
+  font-size: 62.5%; 
+  background-color: rgb(187, 186, 186)
+}
+
+
+
+
+
+div h1 a {
+  color: purple;
+}
+
+h4,
+h5 {
+  color: yellow;
+}
+
+.second2 {
+  border: 1px solid black;
+}
+p a {
+  color: red;
+}
+
+.box_model_ex {
+  border: 10px dotted green;
+  background-color: grey;
+  padding: 20px;
+}
+div h2 {
+  border: 1px solid green;
+}
+
+span {
+  border: 1px solid black;
+  color: red;
+  width: 100px;
+  /* margin: 0 auto; */
+}
+
+.sample {
+ width: 80%;
+}
+.sample img {
+  width: 50%;
+}
+
+.anker {
+  color: peru;
+}
+
+#hello {
+  color: royalblue;
+}
+
+.myHello {
+  color: red;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+li {
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+
+.block-p {
+  width: 500px;
+}
+
+
+
+div {
+  border: 1px solid black;
+}
+.iphoneDiv {
+
+  border: 1px solid red;
+  color: red;
+  margin: 10px 20px;
+  width: 40%;
+}
+
+.inline-img {
+  width: 200px;
+  float: right;
+
+
+
+}
+
+
+
+/* .myDiv div h1,
+.myDiv div p {
+  font-size: 1em;
+} */
+.myDiv p {
+  width: 20%;
+  /* margin: auto; */
+  text-align: center;
+}
+.clickDiv {
+  text-align: center;
+  clear: right;
+}
+.btn {
+  display: inline-block;
+  width: 60px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #805541;
+  /* margin: auto; */
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+  border: none;
+  margin-top: 30px;
+
+
+}
+.btn:hover {
+  background-color: #a8928c;
+  color: black;
+  transform: translateY(2px);
+}
+
+.img_con {
+  overflow: auto;
+  vertical-align: middle;
+}
+
+.ankerDiv {
+  text-align: center;
+}
+
+.iphoneCon {
+  margin: 10px 30px;
+  color: green;
+  font-size: 2rem;
+}
+
+.iphoneCon p {
+  font-size: 1rem;
+
+}
+/* 
+RGB
+binary: 01
+        10
+        11
+        100
+decimal: 0123456789
+          10
+          0 1 2 3 4 5 6 7 8 9 10 A B C D
+          E F
+          10
+*/
+/* precedence
+0) !important
+1) inline
+2) internal
+3) external
+4) id
+5) class
+6) element tag (if you have more specific, it take precedence)
+
+
+Display property
+
+1) inline
+2) inline-block
+3) block
+4: none
+
+absolute size: px
+
+relative size: rem, em, %
+
+use % for width of element
+use rem or em: for font-size or margin, padding left or right
+use px for margin/padding top and bottom
+
+*/
+
+/*
+absolute size: font-size or width of div, img..
+5px, 10px
+
+relative size: %, em
+
+
+
+*/

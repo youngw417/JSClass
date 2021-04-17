@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 10px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  word-spacing: 0.3rem;
+}
+
+h2:after {
+  display: block;
+  background-color: #cf6d17;
+  height: 2px;
+  width: 10rem;
+  content: ' ';
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+section {
+  padding: 150px 4rem;
+}
+
+.row {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
+
+/* this is header css ****************** */
+
+header {
+  padding: 2rem 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.myrow {
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logo-black {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.3rem;
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #cf6d17;
+}
+
+.hero-text-box {
+  margin-top: 70px;
+}
+
+.btn {
+  margin-right: 1.5rem;
+  border: 1px solid #cf6d17;
+  padding: 8px 2rem;
+  border-radius: 1.5rem;
+}
+
+.btn-full {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover {
+  background-color: #c1814a;
+}
+
+.btn-ghost {
+  color: #cf6d17;
+}
+
+.btn-ghost:hover {
+  background-color: #cf6d17;
+  color: white;
+}
+
+/* Section - features ***********************/
+
+.row-1 {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.box {
+  width: 25%;
+  padding: 3rem 2rem;
+}
+
+.icon-big {
+  font-size: 5rem;
+  color: #cf6d17;
+  margin-bottom: 20px;
+}
+
+/* .row-2 {
+  justify-content: space-between;
+} */
+
+/* Section - section-meals *************/
+
+.section-meals {
+  padding: 0;
+}
+
+.meal-photo {
+  overflow: hidden;
+  background-color: black;
+  width: 25%;
+}
+
+.meals-showcase img {
+  width: 100%;
+  transform: scale(1.15);
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meals-showcase img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.meals-div {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}

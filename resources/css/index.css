@@ -1,0 +1,14 @@
+.box-out1 {
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+}
+
+.box-out1 div {
+  border: 1px solid red;
+  background-color: yellow;
+  width: 100px;
+  height: 20px;
+}
