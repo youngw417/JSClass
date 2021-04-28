@@ -1,0 +1,55 @@
+1. getting nodes:
+document.getElementById('intro-info')
+document.getElementsByTagName('div')
+document.getElementsByClassName('myClass')
+
+document.querySelector('#intro-info')
+document.querySelector('.nav-items') -> getting the first item
+document.querySelectorAll('div')
+
+2. inserting text to nodes
+introText.textContent = 'this is great'
+introText.innerHTML = ' this is great'
+
+3. setting attributes
+catImg.src = "locat.img"
+
+4. adding styles to nodes
+headline.style.fontSize = '5rem'
+
+5. adding/removing class
+    header.classList.add("green")
+header.classList.remove("green")
+header.classList.toggle("green")
+    
+6. creating elements
+const subHeadLine = document.createElement('h1')
+
+headerEL.appendChild(subHeadLine)
+headerEL.prepend(subHeadLine)
+headerEL.insertBefore(subHeadLine)
+headerEL.replaceChild(new, old)
+headerEL.removeChild(subHeadLine)
+headerEL.removeChild(headerEL.lastElementChild)
+headerEL.removeChild(headerEL.firstChild)
+
+to remove all child:
+while (headerEL.firstChild) {
+    headerEL.removeChild(headerEL.firstChild);
+}
+
+exmaple:
+let app = document.querySelector('#app');
+
+let langs = ['CSS','JavaScript','TypeScript'];
+
+let nodes = langs.map(lang => {
+    let li = document.createElement('li');
+    li.textContent = lang;
+    return li;
+});
+
+app.prepend(...nodes);
+
+coverts node list to array
+const arr = Array.from(nl)
